@@ -1,0 +1,47 @@
+<html>
+    
+    <head>
+        <title>CLOCK</title>
+    </head>
+    <body>
+       <script>
+           setInterval(() => {
+               
+         
+           let a;
+           let Time;
+           let date
+           a = new Date()
+        Time = a.getHours()+ ":" + a.getMinutes() + ":" + a.getSeconds()
+        date =  a.toLocaleDateString()
+        document.getElementById('time').innerHTML = Time + "<br>ON &nbsp;" + date;
+     
+    }, 1000);
+    
+
+   
+       </script>
+           
+        <style>
+       
+           div{
+         
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+           
+       </style>
+            
+       <div class="container">
+           
+        <center><h1 style="color: brown;padding: 2px;background-color:greenyellow;">CLOCK</span></h1><center>
+            <h1 id="time"></h1>
+           
+        </div>
+
+
+    </body>
+</html>
